@@ -60,7 +60,7 @@ hr{
 .image-container img {
     border-radius: 50%;
     margin: 20px;
-    margin-right: 60px;
+    margin-right: 50px;
     width: 140px;
     height: 140px;
 }
@@ -69,7 +69,6 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-right: 10px;
 }
 
 .text-container .divider {
@@ -110,18 +109,18 @@ body::before {
 }
 
 .left-column {
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 40%;
+    width: 45%;
     display: flex; 
     gap: 10px; 
     flex-direction: column;
 }
 
 .right-column {
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 60%;
+    width: 55%;
     margin-bottom: 20px;
     display: flex; 
     gap: 10px; 
@@ -144,11 +143,15 @@ a {
 }
 
 li {
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px -10px;
 }
 
 a:hover {
     color: #d7d7d7;
+}
+
+.phoneSetting{
+    display: none;
 }
 
 @media (min-width: 1000px) {
@@ -174,5 +177,20 @@ a:hover {
     }
     .margin p{
         display: inline;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .image-container img {
+        margin-right: 20px;
+    }
+
+    .phoneSetting{
+        display: block;
+    }
+    .text-container p{
+        font-size: 10px;
+        letter-spacing: normal;
     }
 }
